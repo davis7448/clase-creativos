@@ -1,0 +1,8 @@
+{
+  "name": "clase-creativos",
+  "version": "1.0.0",
+  "description": "Clase: investigación de anuncios (Meta Ad Library, TikTok, AliExpress, Mercado Libre) y anuncios estáticos con Codex a partir de la investigación. Incluye setup guiado para Mac y Windows.",
+  "author": { "name": "David" },
+  "license": "MIT",
+  "keywords": ["meta-ads", "ad-library", "creativos", "codex", "estaticos", "ecommerce", "clase"]
+}

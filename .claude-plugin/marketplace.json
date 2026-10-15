@@ -1,0 +1,15 @@
+{
+  "name": "clase-creativos",
+  "owner": { "name": "David" },
+  "metadata": {
+    "description": "Marketplace de la clase: investigación de anuncios y anuncios estáticos con Codex.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "clase-creativos",
+      "source": "./",
+      "description": "Investigación de anuncios y anuncios estáticos con Codex, con setup para Mac y Windows."
+    }
+  ]
+}
