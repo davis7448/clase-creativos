@@ -49,8 +49,10 @@ A cada referencia le pones una etiqueta de evidencia. Nunca presentes un INDICIO
 
 **Señal fuerte:** cuando el mismo video o copy aparece en varias tiendas ("N anuncios usan este contenido"), es el mismo producto revendido y ese corte está vendiendo.
 
+**e) Formato de cada referencia + radar de formatos nuevos.** A cada referencia le anotas también su **formato**, con el nombre del catálogo de [references/formatos.md](references/formatos.md): UGC, unboxing, nota del iPhone, mito vs. realidad… Además, cada investigación corre un **radar**: busca 5 anuncios PROBADOS de **otras categorías** de contraentrega (hogar, belleza, mascotas, juguetes) con "pago contra entrega" y anota solo su formato. Si una referencia usa una estructura repetible que no está en el catálogo, es un **formato nuevo**: se agrega a `FORMATOS.md` → "🆕 Formatos descubiertos" y se le avisa al usuario. Procedimiento completo y puntos: [references/seleccion-formatos.md](references/seleccion-formatos.md), Pasos 0 y 1.
+
 ## 3. Entregar los links (siempre en el chat)
-Por cada referencia: anunciante · gancho (primera frase) · etiqueta de evidencia · link.
+Por cada referencia: anunciante · gancho (primera frase) · **formato** · etiqueta de evidencia · link.
 - **Un anuncio:** link filtrado por una frase única de su texto, sin tildes:
   `https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&media_type=all&search_type=keyword_unordered&q=<frase>`
 - **Toda la biblioteca de una marca:**
@@ -72,12 +74,18 @@ Cada ángulo sale de lo que encontraste: los dolores que repiten los anuncios PR
 
 ## 5. Matriz ángulo × formato (el entregable que importa)
 Regla madre: **un anuncio = un solo ángulo**, y cada ángulo se dice en varios formatos.
-- Mínimo **4 ángulos × 3 formatos estáticos = 12 anuncios**, elegidos del catálogo [references/formatos.md](references/formatos.md).
-- Por cada ángulo combina:
-  - **1 nativo** (que no parezca anuncio): nota del iPhone, chat de WhatsApp, historia de Instagram, búsqueda de Google, ticket…
-  - **1 de argumento**: beneficios en bullets, nosotros vs. ellos, antes/después, mito vs. realidad, problemas tachados…
-  - **1 de oferta**: pack, precio por día, combo.
-- Al menos una pieza tiene que ser **TOFU**: educativa, que habla del problema sin vender al inicio.
+- Mínimo **4 ángulos × 3 formatos = 12 anuncios**.
+- ⚠️ **El formato lo elige la investigación, no la costumbre.** No uses siempre los mismos (nota del iPhone, WhatsApp, Google…): elige con [references/seleccion-formatos.md](references/seleccion-formatos.md).
+  1. Arma la tabla **"Formatos del mercado"** con los formatos de tus referencias y sus puntos de evidencia (PROBADO = 3 · INDICIO = 2 · SIN PROBAR = 1).
+  2. **Reglas:**
+     - al menos la mitad de los formatos tiene que venir de esa tabla;
+     - el formato más fuerte del mercado va siempre;
+     - un formato no se repite en dos ángulos;
+     - como máximo 4 formatos repetidos del producto anterior (lee `REGISTRO-FORMATOS.md`; plantilla en `templates/`);
+     - incluye 1 formato comodín nunca probado.
+  3. Por cada ángulo, mezcla familias distintas: **nativo** (no parece anuncio), **de argumento** (vs., mito, bullets…) y **de oferta** (pack, precio por día).
+  4. Al menos una pieza tiene que ser **TOFU**: educativa, que habla del problema sin vender al inicio.
+- Formatos disponibles: el catálogo [references/formatos.md](references/formatos.md) **más los que descubra el radar** (sección 2e).
 
 Escribe `MATRIZ.md` con la plantilla [templates/MATRIZ.md](templates/MATRIZ.md). Cada fila es un **brief completo** que `estaticos-codex` puede producir sin preguntar nada:
 - **ID:** `PRODUCTO_ANGULO_FORMATO_GANCHO_v1`, por ejemplo `P360_DOLOR_NOTAIPHONE_H1_v1`.
@@ -87,19 +95,22 @@ Escribe `MATRIZ.md` con la plantilla [templates/MATRIZ.md](templates/MATRIZ.md).
 - **Escena / composición:** qué se ve y dónde va el producto.
 - **Foto del producto** que se usa como referencia (de `media/producto/`).
 - **Referencia:** el anuncio de la competencia en el que se inspira (link).
+- **Por qué este formato:** la referencia y los puntos de la tabla "Formatos del mercado".
 - **Copy para Meta:** texto principal (máximo 3 líneas), título y descripción.
 
 ## 6. Cierre
 Entrega en el chat:
 1. Resumen en 5 líneas: qué es el producto, quién lo compra, precio de mercado y la oferta recomendada.
 2. Las 5–10 mejores referencias con sus links.
-3. La tabla de la matriz (ID · ángulo · formato · titular).
+3. La tabla "Formatos del mercado" y la de la matriz (ID · ángulo · formato · titular · por qué este formato).
+3b. Los **formatos nuevos** que encontró el radar, con su referencia, o "radar sin formatos nuevos".
 4. Siguiente paso: **"crea los estáticos de la matriz"** (skill `estaticos-codex`).
 
 Archivos que deben quedar en `~/mis-creativos/<producto>/`:
 - `PRODUCTO.md`
 - `REFERENCIAS.md`
 - `MATRIZ.md`
+- `REGISTRO-FORMATOS.md` en `~/mis-creativos/` (uno para todos los productos; se actualiza al publicar)
 - `media/producto/` (fotos reales)
 - `media/referencias/` (opcional)
 
